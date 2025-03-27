@@ -1,0 +1,215 @@
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/BR-pt-20250317-TRIFECTA-perspective_d5b563c6-e04a-4b25-bccd-47184033c570_large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.language-enter-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 80px;
+}
+
+.language-select {
+    padding: 5px 30px;
+    background-color: rgba(38, 38, 38, 0.7);
+    border: 1px solid gray;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enter-btn {
+    background-color: rgb(227, 0, 0);
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enter-btn:hover {
+    background-color: darkred;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.content-container h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.content-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(221, 220, 220);
+}
+
+.content-container p {
+    font-size: 15px;
+    font-weight: 540;
+    color: rgb(221, 220, 220);
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.email-input {
+    width: 410px;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 220, 200);
+    background-color: rgba(38, 38, 38, 0.7);
+    color: white;
+    opacity: 0.9;
+}
+
+.email-input::placeholder {
+    color: rgb(221, 220, 220);
+    font-size: 13px;
+}
+
+.submit-btn {
+    background-color: rgb(227, 0, 0);
+    color: white;
+    font-size: 25px;
+    padding: 11px 44px;
+    border: 1px solid rgb(227, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: darkred;
+}
+
+.submit-btn .arrow {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.submit-btn span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        padding-left: 10px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .language-enter-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-input {
+        width: 300px;
+    }
+
+    .submit-btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    .content-container h1 {
+        font-size: 40px;
+    }
+
+    .content-container h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 120px;
+    }
+
+    .email-input {
+        width: 250px;
+    }
+
+    .submit-btn {
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+
+    .content-container h1 {
+        font-size: 30px;
+    }
+
+    .content-container h2 {
+        font-size: 14px;
+    }
+}
+.error{
+    border: 2px solid red;
+}
+.error-message{
+    color:red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    top: 55px;
+    width:100%;
+    text-align: center;
+
+}
