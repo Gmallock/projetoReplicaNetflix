@@ -9,6 +9,10 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+.english{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web/BR-en-20250407-TRIFECTA-perspective_8b4a4f85-2e5d-4d78-80f9-1e40257f9525_large.jpg);
+}
+
 header {
     position: absolute;
     top: 0;
