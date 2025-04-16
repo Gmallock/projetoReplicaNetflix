@@ -1,6 +1,6 @@
 document.getElementById("language-select").addEventListener("change", function() {
     if (this.value === "pt"){
-     window.location.href = "indexNetflix.html";
+     window.location.href = "index.html";
     } 
  });
 
